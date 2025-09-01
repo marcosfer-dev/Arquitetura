@@ -1,0 +1,152 @@
+.header-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+
+.main-container {
+    background: #3D5873;
+    display: flex;
+    gap: 120px;
+    width: 100%;
+}
+
+section {
+    height: 1195px;
+}
+
+.main-container .imagem-logo {
+    margin: 50px 0px 50px 60px;
+}
+
+.main-container .foto {
+    margin-top: 30px;
+}
+
+.footer-container {
+    background: #3D5873;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 138px;
+}
+
+.footer-container h3 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 29px;
+}
+
+.footer-container a {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contatos h3 {
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box img {
+  max-width: 70%;
+  max-height: 70%;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.icon-box img:hover {
+  transform: scale(1.1);
+}
+
+.section-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrosel {
+  position: relative;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dots .dot.active {
+  background-color: white;
+}
