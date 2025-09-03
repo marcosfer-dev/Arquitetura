@@ -1,0 +1,148 @@
+.section-projetos-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-projetos-container h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+.fotos-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 150px; 
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.projeto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto-item img {
+  width: 120%; 
+  height: auto;
+}
+
+.projeto-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.botao-mais {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.botao-mais img {
+  width: 50px; 
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botao-mais img:hover {
+  transform: scale(1.1);
+}
+
+.section-projetos-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-projetos-container h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.fotos-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px; 
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.projeto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto-item img {
+  width: 120%;
+  height: auto;
+}
+
+.projeto-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botão "+" com imagem */
+.botao-mais {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.botao-mais img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botao-mais img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .fotos-projetos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px; 
+  }
+
+  .projeto-item img {
+    width: 100%; 
+  }
+
+  .section-projetos-container h1 {
+    font-size: 40px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .fotos-projetos {
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+
+  .projeto-item img {
+    width: 100%;
+  }
+
+  .section-projetos-container h1 {
+    font-size: 30px;
+
+  .botao-mais img {
+    width: 40px;
+    height: 40px;
+  }
+}
