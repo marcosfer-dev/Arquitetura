@@ -129,20 +129,24 @@
 }
 
 @media (max-width: 768px) {
-  .fotos-projetos {
-    grid-template-columns: 1fr; 
-    gap: 40px;
-  }
 
-  .projeto-item img {
-    width: 100%;
-  }
-
-  .section-projetos-container h1 {
-    font-size: 30px;
+    .fotos-projetos {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+    .projeto-item img {
+        width: 100%;
+    } 
+    .section-projetos-container h1 {
+        font-size: 30px;
+    }
+    .botao-mais img {
+        width: 40px;
+        height: 40px;
+    }
+}
 
   .botao-mais img {
     width: 40px;
     height: 40px;
   }
-}
