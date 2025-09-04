@@ -1,0 +1,41 @@
+.main-sobre-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    background: #a3b9d3;
+    border-radius: 10px;
+}
+
+.main-sobre-container h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.main-sobre-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    text-align: left; 
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .main-sobre-container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .main-sobre-container h1 {
+        font-size: 32px;
+    }
+
+    .main-sobre-container p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
